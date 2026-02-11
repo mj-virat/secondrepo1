@@ -1,0 +1,11 @@
+class GFG {
+    static String checkOddEven(int n) {
+        if (n == 0) return "Zero";
+        return ((n & 1) == 0) ? "Even" : "Odd";
+    }
+    public static void main(String[] args) {
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i + " : " + checkOddEven(i));
+        }
+    }
+}
